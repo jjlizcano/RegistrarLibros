@@ -22,7 +22,8 @@ public class PanelOperaciones extends JPanel
     // Constructor
     public PanelOperaciones()
     {
-
+        this.setLayout(null);
+        this.setBackground(new Color(31,31,31));
     }
 
     public void agregarOyentesBotones(ActionListener pAL)
