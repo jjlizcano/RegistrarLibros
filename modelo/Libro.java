@@ -8,8 +8,8 @@ public class Libro
 
     protected String titulo;
     protected String autor;
-    protected String añoEdicion;
-    protected Boolean deLujo;
+    protected String edicion;
+    protected Boolean lujo;
 
     //
     // Métodos
@@ -20,8 +20,8 @@ public class Libro
     {
         this.titulo = "";
         this.autor = "";
-        this.añoEdicion = "";
-        this.deLujo = false;
+        this.edicion = "";
+        this.lujo = false;
     }
 
     public String getTitulo()
@@ -36,11 +36,11 @@ public class Libro
 
     public String getAñoEdicion()
     {
-        return añoEdicion;
+        return edicion;
     }
 
     public Boolean getDeLujo()
     {
-        return deLujo;
+        return lujo;
     }
 }
