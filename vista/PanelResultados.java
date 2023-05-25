@@ -34,9 +34,9 @@ public class PanelResultados extends JPanel
         spResultado.setBorder(null);
         this.add(spResultado);      
     }
-    
+
     public void mostrarResultado(String msj)
     {
-        taResultado.append(msj + "\n"); // Agrega el mensaje al area de texto
+        taResultado.append(msj + "\n");
     }
 }

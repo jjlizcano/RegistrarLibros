@@ -1,12 +1,10 @@
 package controlador;
 
-import modelo.Biblioteca;
-
-import vista.VentanaPrincipal;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
+import javax.swing.JOptionPane;
+import modelo.Biblioteca;
+import vista.VentanaPrincipal;
 
 public class Controlador implements ActionListener
 {
@@ -27,6 +25,7 @@ public class Controlador implements ActionListener
         this.venPrin = pVenPrin;
         this.model = pBiblioteca;
         this.venPrin.miPanelOperaciones.agregarOyentesBotones(this);
+        this.venPrin.miPanelResultados.mostrarResultado("Bienvenido a la biblioteca\ndel señor Pérez");
     }
     
     @Override

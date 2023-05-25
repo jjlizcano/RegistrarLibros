@@ -13,7 +13,7 @@ public class VentanaPrincipal extends JFrame
     private JPanel colorFondo;
     public PanelEntradaDatos miPanelEntradaDatos;
     public PanelOperaciones miPanelOperaciones;
-    public PanelResultados miPanelResultado;
+    public PanelResultados miPanelResultados;
     public DialogoAgregarLibro miDialogoAgregarLibro;
 
     //
@@ -33,9 +33,9 @@ public class VentanaPrincipal extends JFrame
         miPanelOperaciones.setBounds(10,250,560,100);
         this.add(miPanelOperaciones);
         
-        miPanelResultado = new PanelResultados();
-        miPanelResultado.setBounds(360,10,210,230);
-        this.add(miPanelResultado);
+        miPanelResultados = new PanelResultados();
+        miPanelResultados.setBounds(360,10,210,230);
+        this.add(miPanelResultados);
         miDialogoAgregarLibro = null;
         
         this.setTitle("Biblioteca del señor Pérez");
@@ -49,5 +49,10 @@ public class VentanaPrincipal extends JFrame
         colorFondo.setBackground(new Color(24, 24, 24));
         colorFondo.setBounds(0,0,600,400);
         this.add(colorFondo);
+    }
+
+    public void crearDialogoAgregarLibro()
+    {
+        miDialogoAgregarLibro = new DialogoAgregarLibro();
     }
 }
