@@ -34,12 +34,12 @@ public class Libro
         return autor;
     }
 
-    public String getAñoEdicion()
+    public String getEdicion()
     {
         return edicion;
     }
 
-    public Boolean getDeLujo()
+    public Boolean getLujo()
     {
         return lujo;
     }
