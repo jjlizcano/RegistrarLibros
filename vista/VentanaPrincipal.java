@@ -14,7 +14,7 @@ public class VentanaPrincipal extends JFrame
     public PanelEntradaDatos miPanelEntradaDatos;
     public PanelOperaciones miPanelOperaciones;
     public PanelResultados miPanelResultados;
-    public DialogoAgregarLibro miDialogoAgregarLibro;
+    public DialogoRegistrarLibro miDialogoRegistrarLibro;
 
     //
     // Métodos
@@ -36,7 +36,7 @@ public class VentanaPrincipal extends JFrame
         miPanelResultados = new PanelResultados();
         miPanelResultados.setBounds(360,10,210,230);
         this.add(miPanelResultados);
-        miDialogoAgregarLibro = null;
+        miDialogoRegistrarLibro = null;
         
         this.setTitle("Biblioteca del señor Pérez");
         this.setSize(600,400);
@@ -51,8 +51,8 @@ public class VentanaPrincipal extends JFrame
         this.add(colorFondo);
     }
 
-    public void crearDialogoAgregarLibro()
+    public void crearDialogoRegistrar()
     {
-        miDialogoAgregarLibro = new DialogoAgregarLibro();
+        miDialogoRegistrarLibro = new DialogoRegistrarLibro();
     }
 }

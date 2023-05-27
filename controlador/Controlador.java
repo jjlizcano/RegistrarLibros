@@ -25,13 +25,21 @@ public class Controlador implements ActionListener
         this.venPrin = pVenPrin;
         this.model = pBiblioteca;
         this.venPrin.miPanelOperaciones.agregarOyentesBotones(this);
-        this.venPrin.miPanelResultados.mostrarResultado("Bienvenido a la biblioteca\ndel señor Pérez");
+        this.venPrin.miPanelResultados.mostrarResultado("Bienvenido a la\nbiblioteca del señor Pérez");
     }
     
     @Override
     public void actionPerformed(ActionEvent ae)
     {
+        String comando = ae.getActionCommand();
 
+        if(comando.equals("registrar"))
+        {
+            System.out.println("Error");
+            venPrin.crearDialogoRegistrar();
+            System.out.println("Error");
+            venPrin.miDialogoRegistrarLibro.agregarOyentesBotones(this);
+        }
     }
     
 }
