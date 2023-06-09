@@ -35,10 +35,13 @@ public class Controlador implements ActionListener
 
         if(comando.equals("registrar"))
         {
-            System.out.println("Error");
-            venPrin.crearDialogoRegistrar();
-            System.out.println("Error");
+            venPrin.crearDialogoRegistrarLibro();
             venPrin.miDialogoRegistrarLibro.agregarOyentesBotones(this);
+        }
+
+        if(comando.equals("salir"))
+        {
+            System.exit(0);
         }
     }
     

@@ -9,49 +9,53 @@ public class VentanaPrincipal extends JFrame
     //
     // Atributos
     //
-    
+
     private JPanel colorFondo;
     public PanelEntradaDatos miPanelEntradaDatos;
     public PanelOperaciones miPanelOperaciones;
     public PanelResultados miPanelResultados;
     public DialogoRegistrarLibro miDialogoRegistrarLibro;
-
+    
     //
     // Métodos
     //
-    
-    // Constructor
+
+    // Método constructor
     public VentanaPrincipal()
     {
+        // Definición del contenedor de la ventana
         this.setLayout(null);
         
+        // Creación y adición del PanelEntradaDatos
         miPanelEntradaDatos = new PanelEntradaDatos();
         miPanelEntradaDatos.setBounds(10,10,340,230);
         this.add(miPanelEntradaDatos);
         
+        // Creación y adición del PanelOperaciones
         miPanelOperaciones = new PanelOperaciones();
         miPanelOperaciones.setBounds(10,250,560,100);
         this.add(miPanelOperaciones);
         
+        // Creación y adición del PanelResultados
         miPanelResultados = new PanelResultados();
         miPanelResultados.setBounds(360,10,210,230);
         this.add(miPanelResultados);
-        miDialogoRegistrarLibro = null;
         
-        this.setTitle("Biblioteca del señor Pérez");
-        this.setSize(600,400);
+        // Características de la ventana
+        this.setSize(580,360);
+        this.setUndecorated(true);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setResizable(false);
         this.setVisible(true);
-        
+
         colorFondo = new JPanel();
         colorFondo.setBackground(new Color(24, 24, 24));
         colorFondo.setBounds(0,0,600,400);
         this.add(colorFondo);
     }
 
-    public void crearDialogoRegistrar()
+    public void crearDialogoRegistrarLibro()
     {
         miDialogoRegistrarLibro = new DialogoRegistrarLibro();
     }

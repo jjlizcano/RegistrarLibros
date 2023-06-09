@@ -17,14 +17,8 @@ public class DialogoRegistrarLibro extends JDialog
 
     private JPanel colorFondo;
     private JLabel lbTituloDialogo;
-    private JLabel lbTitulo;
-    private JLabel lbAutor;
-    private JLabel lbEdicion;
     private JLabel lbNombreColeccion;
     private JLabel lbNumeroColeccion;
-    private JTextField tfTitulo;
-    private JTextField tfAutor;
-    private JTextField tfEdicion;
     private JTextField tfNombreColeccion;
     private JTextField tfNumeroColeccion;
     private JButton btAceptar;
@@ -47,51 +41,6 @@ public class DialogoRegistrarLibro extends JDialog
         lbTituloDialogo.setFont(fontLabel);
         lbTituloDialogo.setForeground(Color.WHITE);
         this.add(lbTituloDialogo);
-
-        lbTitulo = new JLabel("Título:", JLabel.RIGHT);
-        lbTitulo.setBounds(0,50,150,25);
-        lbTitulo.setFont(fontLabel);
-        lbTitulo.setForeground(Color.WHITE);
-        this.add(lbTitulo);
-
-        tfTitulo = new JTextField();
-        tfTitulo.setBounds(160,50,60,20);
-        tfTitulo.setFont(fontField);
-        tfTitulo.setBorder(null);
-        tfTitulo.setForeground(Color.WHITE);
-        tfTitulo.setCaretColor(Color.WHITE);
-        tfTitulo.setBackground(new Color(59,59,59));
-        this.add(tfTitulo);
-
-        lbAutor = new JLabel("Autor:", JLabel.RIGHT);
-        lbAutor.setBounds(0,90,150,25);
-        lbAutor.setFont(fontLabel);
-        lbAutor.setForeground(Color.WHITE);
-        this.add(lbAutor);
-
-        tfAutor = new JTextField();
-        tfAutor.setBounds(160,90,60,20);
-        tfAutor.setFont(fontField);
-        tfAutor.setBorder(null);
-        tfAutor.setForeground(Color.WHITE);
-        tfAutor.setCaretColor(Color.WHITE);
-        tfAutor.setBackground(new Color(59,59,59));
-        this.add(tfAutor);
-
-        lbEdicion = new JLabel("Edición:", JLabel.RIGHT);
-        lbEdicion.setBounds(0,130,150,25);
-        lbEdicion.setFont(fontLabel);
-        lbEdicion.setForeground(Color.WHITE);
-        this.add(lbEdicion);
-
-        tfEdicion = new JTextField();
-        tfEdicion.setBounds(160,130,60,20);
-        tfEdicion.setFont(fontField);
-        tfEdicion.setBorder(null);
-        tfEdicion.setForeground(Color.WHITE);
-        tfEdicion.setCaretColor(Color.WHITE);
-        tfEdicion.setBackground(new Color(59,59,59));
-        this.add(tfEdicion);
 
         lbNombreColeccion = new JLabel("Nombre Colección:", JLabel.RIGHT);
         lbNombreColeccion.setBounds(0,170,200,25);
